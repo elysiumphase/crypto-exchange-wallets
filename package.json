@@ -1,0 +1,59 @@
+{
+  "name": "crypto-exchange-wallets",
+  "version": "1.0.0",
+  "author": "Elysium Phase <hi@elysiumphase.com> (https://github.com/elysiumphase)",
+  "description": "List of Crypto centralized and decentralized exchange wallets by platform and exchange",
+  "bin": {},
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./ethereum": "./dist/ethereum/index.js",
+    "./ethereum/wallets": "./dist/ethereum/wallets.js",
+    "./ethereum/walletsByExchange": "./dist/ethereum/walletsByExchange.js"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "postbuild": "eslint dist/* --fix",
+    "lint": "eslint src/",
+    "test": "mocha test/* --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:elysiumphase/crypto-exchange-wallets.git"
+  },
+  "engines": {
+    "node": ">=10.22.1",
+    "npm": ">=6.14.6",
+    "V12": "60°"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "crypto-exchange-wallets",
+    "crypto",
+    "exchange",
+    "wallet",
+    "list",
+    "platform",
+    "bitcoin",
+    "ethereum",
+    "cardano",
+    "solana",
+    "avalanche",
+    "polkadot"
+  ],
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "chai": "4.3.6",
+    "eslint": "8.23.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "mocha": "10.0.0"
+  },
+  "private": false,
+  "preferGlobal": false,
+  "analyze": false,
+  "license": "MIT"
+}
